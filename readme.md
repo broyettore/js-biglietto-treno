@@ -16,17 +16,20 @@ L’output del prezzo finale va messo fuori in forma umana (con massimo due deci
 
 ### step 2 : Capire come ottenere un PRIMO prezzo in base alle info inserite nel step 1
 
-* prezzo biglietto è di 0.21€ al km, quindi possiamo fare 0.21 x variabile1
+* prezzo biglietto è di 0.21€ al km, quindi possiamo fare 0.21 x variabile1.
+* creiamo una variabile3 = 0.21 x variabile1 ovvero il prezzo base.
 
 ### step 3 : Considerare l'applicazione di sconti nel calcolo del prezzo finale
 
-* Lo sconto viene applicato in base all'età, per i passaggeri < 18 e i passaggeri > 65
-* Andiamo a creare delle condizioni per cui SE variabile2 < 18, applichiamo un 20% di sconto al prezzo
-* ALTRIMENTI SE variabile2 > 65, applichiamo un 40% di sconto al prezzo
-* ALTRIMENTI  calcoliamo il prezzo come nello step 2
+* Lo sconto viene applicato in base all'età, per i passaggeri < 18 e i passaggeri > 65.
+* creo una variabile4 = prezzobase - (prezzobase / 100) * 20 ovvero lo sconto per i minorenni.
+* creo una variabile5 = prezzobase - (prezzobase / 100) * 20 ovvero lo sconto per over 65.
+* Andiamo a creare delle condizioni per cui SE variabile2 < 18, applichiamo un 20% di sconto con la variabile4.
+* ALTRIMENTI SE variabile2 > 65, applichiamo un 40% di sconto con la variabile5.
+* ALTRIMENTI  calcoliamo il prezzo come nello step 2.
 
 ### step 3 : Mostrare il risultato con massimo due decimali
 
-* usiamo semplicemente il metodo toFixed(2), per limitare il prezzo calcolato a due decimali
+* usiamo semplicemente il metodo toFixed(2), per limitare il prezzo calcolato a due decimali.
 * il metodo toFixed() converte un numero in una stringa quindi dobbiamo procedere facendo number(prezzocalcolato.toFixed(2)).
 * Per concludere mostriamo il risultato in console.log() o nell'html.
