@@ -28,7 +28,7 @@ L’output del prezzo finale va messo fuori in forma umana (con massimo due deci
 * ALTRIMENTI SE variabile2 > 65, applichiamo un 40% di sconto con la variabile5.
 * ALTRIMENTI  calcoliamo il prezzo come nello step 2.
 
-### step 3 : Mostrare il risultato con massimo due decimali
+### step 4 : Mostrare il risultato con massimo due decimali
 
 * usiamo semplicemente il metodo toFixed(2), per limitare il prezzo calcolato a due decimali.
 * il metodo toFixed() converte un numero in una stringa quindi dobbiamo procedere facendo number(prezzocalcolato.toFixed(2)).
