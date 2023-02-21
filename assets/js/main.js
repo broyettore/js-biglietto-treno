@@ -1,3 +1,5 @@
+'use strict';
+
 // VARIABILI 
 
 const utenteNome = prompt("Ciao, come si chiama ?");
@@ -21,6 +23,6 @@ if (utenteEtà < 18) {
     document.querySelector(".price").innerHTML = `Il prezzo per questa distanza è di ${Number(prezzoBase.toFixed(2))}€`;
 }
 
-// RISULTATO
+// Call to Action
 
 document.querySelector(".summary").innerHTML = `Pronto/a per questa nuova avventura?`
