@@ -1,6 +1,6 @@
 // VARIABILI 
 
-const utenteNome = prompt("Ciao, come ti chiami ?");
+const utenteNome = prompt("Ciao, come si chiama ?");
 const utenteKm = Number(prompt("Quanti km vuole percorrere ?"));
 const utenteEtà = Number(prompt("Quanti anni ha ?"));
 const prezzoBase = 0.21 * utenteKm
@@ -10,8 +10,8 @@ const scontoAnziani = prezzoBase - (prezzoBase / 100) * 40
 
 // CONDIZIONI DI SCONTO 
 
-document.querySelector(".user").innerHTML = `Ciao ! ${utenteNome}`
-document.querySelector(".distance").innerHTML = `Hai scelto di percorrere ${utenteKm} km`
+document.querySelector(".user").innerHTML = `Ciao Sig/Sig.ra ${utenteNome}`
+document.querySelector(".distance").innerHTML = `Ha scelto di percorrere ${utenteKm} km`
 
 if (utenteEtà < 18) {
     document.querySelector(".price").innerHTML = `Il prezzo per questa distanza è di ${Number(scontoMinorenni.toFixed(2))}€`;
@@ -23,4 +23,4 @@ if (utenteEtà < 18) {
 
 // RISULTATO
 
-document.querySelector(".summary").innerHTML = `Pronto per questa nuova avventura?`
+document.querySelector(".summary").innerHTML = `Pronto/a per questa nuova avventura?`
